@@ -45,7 +45,7 @@ html{scrollbar-gutter:stable}
 .media-dialog .media-account h3{font-size:28px;margin-top:8px}
 .media-dialog .xiaoqi-layout{grid-template-columns:minmax(210px,.75fr) minmax(0,1.8fr)}
 
-html[data-theme="dark"]{--paper:#102536;--panel-blue:#20374f;--panel-purple:#302b45;--panel-green:#203c3b;--panel-rose:#3b2c3c;--panel-sage:#273a36;--panel-yellow:#403728;--panel-method:#2b2d46}
+html[data-theme="dark"]{--paper:#102536;--panel-blue:#20374f;--panel-purple:#302b45;--panel-green:#203c3b;--panel-rose:#3b2c3c;--panel-sage:#273a36;--panel-yellow:#1b3347;--panel-method:#2b2d46}
 html[data-theme="dark"] .featured-project{--surface:#2a465f;--line:#3b5870;--muted:#b5c9db}
 html[data-theme="dark"] .learning-visual{background:#172e44}
 html[data-theme="dark"] .content-project{--line:#55476b;--muted:#c5bcd6}
@@ -59,7 +59,10 @@ html[data-theme="dark"] .teaching-preview figcaption{color:#c7e4d7}
 html[data-theme="dark"] .method-section{--line:#484b65;--muted:#c0c2d5}
 html[data-theme="dark"] .about-grid{--line:#42584d;--muted:#bccfc3}
 html[data-theme="dark"] .about-title .back-sheet{background:#578875}
-html[data-theme="dark"] .now-list{--line:#67573d;--muted:#d2c4a8}
+html[data-theme="dark"] .now-list{--line:#355165;--muted:#b5c8d6;--blue-soft:#294b62;color:#e7f0f5}
+html[data-theme="dark"] .now-list time{color:#9bc6dc}
+html[data-theme="dark"] .now-list article>a,html[data-theme="dark"] .now-list article>button{color:#b8ddeb;border-color:#486b80;background:#203e53}
+html[data-theme="dark"] .now-list article>a:hover,html[data-theme="dark"] .now-list article>button:hover{background:#2b536d;border-color:#729db4}
 html[data-theme="dark"] .media-launch{--line:#65475e;--muted:#cfbccb}
 html[data-theme="dark"] .media-launch:hover{border-color:#bb8da7;box-shadow:none}
 html[data-theme="dark"] .media-launch-action{color:#f0c0d8}
