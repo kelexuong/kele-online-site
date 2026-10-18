@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* Each subject keeps its own color in both themes. */
+:root{--paper:#f7f8fc;--muted:#536575;--panel-blue:#e8f1fc;--panel-purple:#eee8f7;--panel-green:#e7f3ed;--panel-rose:#f9e8e8;--panel-sage:#edf3e8;--panel-yellow:#fff2d5;--panel-method:#ececf8}
+html{scrollbar-gutter:stable}
+.featured-project{--surface:#f8fbff;--line:#c8daed;background:var(--panel-blue)}
+.learning-visual{background:#d9e8f8}
+.content-project{--line:#d9cce9;background:var(--panel-purple)}
+.content-art{background:#e0d4ee;color:#51456c}
+.content-art>p{color:#685b7b}
+.content-art .film-strip i{color:#907aa8}
+.content-art .art-rule{background:#78618e40}
+.teaching-project{--line:#c4ded0;background:var(--panel-green)}
+.teaching-preview{background:#d5eadd}
+.teaching-preview figcaption{color:#3b6655;padding-block:10px}
+.method-section{--line:#d2d4e8;background:var(--panel-method)}
+.about-grid{--line:#cedac6;background:var(--panel-sage);border:1px solid var(--line);border-radius:24px;padding:42px;gap:60px}
+.about-copy{align-self:center}
+.about-title .back-sheet{background:#9fbaa5}
+.now-list{--line:#e6d3a9;background:var(--panel-yellow);border:1px solid var(--line);border-radius:20px;padding:5px 32px}
+.now-list article:last-child{border-bottom:0}
+
+.media-launch{--line:#e8c5cc;display:flex;align-items:center;justify-content:space-between;gap:40px;width:100%;text-align:left;border:1px solid var(--line);border-radius:24px;padding:38px 42px;background:var(--panel-rose);color:var(--ink);transition:border-color .18s,box-shadow .18s}
+.media-launch:hover{border-color:#b5798c;box-shadow:0 10px 26px #5337480d}
+.media-overview{display:block;max-width:650px}
+.media-overview .project-status{display:block}
+.media-overview-title{display:block;font-size:28px;line-height:1.5;font-weight:600;margin-block:9px 12px}
+.media-overview-copy{display:block;font-size:14px;line-height:1.9;color:var(--muted)}
+.media-account-names{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:22px;font-size:12px}
+.media-account-names>span:before{content:"";display:inline-block;width:6px;height:6px;vertical-align:middle;background:#7299be;border-radius:50%;margin-right:9px}
+.media-account-names>span:last-child:before{background:#c77d9b}
+.media-launch-action{display:flex;flex-direction:column;align-items:center;gap:14px;font-size:12px;white-space:nowrap;color:#86526b}
+.media-open-icon{display:grid;place-items:center;width:49px;height:49px;border:1px solid #d5a5b7;border-radius:50%;font-size:26px;line-height:1}
+
+.media-dialog{width:min(1130px,calc(100% - 40px));max-height:calc(100dvh - 44px);border:0;border-radius:24px;background:var(--paper);padding:0;scroll-padding-top:76px}
+.media-dialog::backdrop{background:#0c2033eb;backdrop-filter:blur(8px)}
+.media-dialog-toolbar{position:sticky;top:0;z-index:3;display:flex;justify-content:flex-end;align-items:center;padding:14px 22px 12px;background:var(--paper);border-bottom:1px solid var(--line)}
+.media-close{width:auto;height:40px;min-width:84px;gap:12px;display:flex;padding:0 13px;border-radius:24px;background:var(--surface)}
+.media-close>span:first-child{font-size:12px;line-height:1.5}
+.media-close>span:last-child{font-size:23px;line-height:1}
+.media-dialog-content{display:grid;gap:26px;padding:24px}
+.media-dialog .media-account{margin:0;scroll-margin-top:12px}
+.media-dialog .huer-account{--surface:#e8f1fc;--line:#c8daed;background:var(--surface)}
+.media-dialog .account-evidence a{background:#f8fbff}
+.media-dialog .media-account h3{font-size:28px;margin-top:8px}
+.media-dialog .xiaoqi-layout{grid-template-columns:minmax(210px,.75fr) minmax(0,1.8fr)}
+
+html[data-theme="dark"]{--paper:#102536;--panel-blue:#20374f;--panel-purple:#302b45;--panel-green:#203c3b;--panel-rose:#3b2c3c;--panel-sage:#273a36;--panel-yellow:#403728;--panel-method:#2b2d46}
+html[data-theme="dark"] .featured-project{--surface:#2a465f;--line:#3b5870;--muted:#b5c9db}
+html[data-theme="dark"] .learning-visual{background:#172e44}
+html[data-theme="dark"] .content-project{--line:#55476b;--muted:#c5bcd6}
+html[data-theme="dark"] .content-art{background:#3b3253;color:#ede2ff}
+html[data-theme="dark"] .content-art>p{color:#cbbfdf}
+html[data-theme="dark"] .content-art .film-strip i{color:#b8a2d7}
+html[data-theme="dark"] .content-art .art-rule{background:#b8a2d74d}
+html[data-theme="dark"] .teaching-project{--line:#3b5b52;--muted:#b0cfc5}
+html[data-theme="dark"] .teaching-preview{background:#2b4b40}
+html[data-theme="dark"] .teaching-preview figcaption{color:#c7e4d7}
+html[data-theme="dark"] .method-section{--line:#484b65;--muted:#c0c2d5}
+html[data-theme="dark"] .about-grid{--line:#42584d;--muted:#bccfc3}
+html[data-theme="dark"] .about-title .back-sheet{background:#578875}
+html[data-theme="dark"] .now-list{--line:#67573d;--muted:#d2c4a8}
+html[data-theme="dark"] .media-launch{--line:#65475e;--muted:#cfbccb}
+html[data-theme="dark"] .media-launch:hover{border-color:#bb8da7;box-shadow:none}
+html[data-theme="dark"] .media-launch-action{color:#f0c0d8}
+html[data-theme="dark"] .media-open-icon{border-color:#936780}
+html[data-theme="dark"] .media-dialog .huer-account{--surface:#20374f;--line:#3b5870;--muted:#b5c9db}
+html[data-theme="dark"] .media-dialog .account-evidence a{background:#193346}
+html[data-theme="dark"] .xiaoqi-account{color-scheme:dark;--ink:#ffe2ed;--muted:#dbb8c7;--line:#755063;--blue:#ffb1d2;--blue-soft:#512f41;background:#3e2936;border-color:#755063}
+html[data-theme="dark"] .xiaoqi-portrait,html[data-theme="dark"] .xiaoqi-account .work-link{background:#4a3140;border-color:#755063}
+html[data-theme="dark"] .xiaoqi-account .work-link img{background:#35202d}
+html[data-theme="dark"] .portrait-petal{background:#6d3b55;color:#ffcade;box-shadow:0 3px 0 #8c4d6c}
+html[data-theme="dark"] .xiaoqi-heart{color:#ffa0c2}
+html[data-theme="dark"] .xiaoqi-account .xiaoqi-metrics>div{border-bottom-color:var(--line)}
+html[data-theme="dark"] .notebook{background:#233e3d;color:#e1eeea}
+html[data-theme="dark"] .notebook-top,html[data-theme="dark"] .notebook-bottom{border-color:#486562;color:#b4ceca}
+html[data-theme="dark"] .notebook-tabs button,html[data-theme="dark"] .note-kicker,html[data-theme="dark"] .note-footnote{color:#b4ceca}
+html[data-theme="dark"] .notebook-tabs button.active{color:#a6e4d6;border-color:#a6e4d6}
+html[data-theme="dark"] .note-flow>span{background:#2d4c49;border-color:#668a82}
+html[data-theme="dark"] .note-content{background-image:linear-gradient(#b7dfd210 1px,transparent 1px)}
+html[data-theme="dark"] .round-button{color:#b5e5d9;border-color:#749a90}
+html[data-theme="dark"] .round-button:hover{background:#385c55}
+html[data-theme="dark"] #case-content{--surface:#302b45;--line:#55476b;--muted:#c5bcd6}
+html[data-theme="dark"] #case-teaching{--surface:#203c3b;--line:#3b5b52;--muted:#b0cfc5}
+html[data-theme="light"] #case-learnflow{--surface:#eef5ff}
+html[data-theme="light"] #case-content{--surface:#f3eefb}
+html[data-theme="light"] #case-teaching{--surface:#edf6f0}
+
+@media(max-width:1080px){.about-grid{padding:32px;gap:40px}.media-dialog .xiaoqi-layout{grid-template-columns:1fr}.media-dialog .xiaoqi-portrait{width:min(100%,280px);justify-self:center}}
+@media(max-width:800px){.about-grid{padding:28px;gap:30px}.media-launch{padding:29px;gap:24px}.media-overview-title{font-size:25px}.media-overview-copy{font-size:13px}.media-dialog-content{padding:18px;gap:20px}}
+@media(max-width:620px){.about-grid{padding:25px 23px;gap:32px;border-radius:18px}.now-list{padding:2px 20px;border-radius:18px}.media-launch{padding:25px 23px;display:block;border-radius:18px}.media-overview-copy{font-size:12px}.media-account-names{font-size:11px;gap:18px;margin-top:19px}.media-launch-action{flex-direction:row;justify-content:space-between;margin-top:24px;padding-top:17px;border-top:1px solid var(--line)}.media-open-icon{width:36px;height:36px;font-size:23px}.media-dialog{width:calc(100% - 16px);max-height:calc(100dvh - 16px);border-radius:16px}.media-dialog-toolbar{padding:10px 13px 9px}.media-dialog-content{padding:12px;gap:16px}.media-dialog .media-account{padding:25px 21px;border-radius:16px}.media-dialog .media-account h3{font-size:25px}.media-dialog .xiaoqi-portrait{width:min(100% - 14px,260px)}}
+@media(prefers-reduced-motion:reduce){.media-launch{transition:none}}
